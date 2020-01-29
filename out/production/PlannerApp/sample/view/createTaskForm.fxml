@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="313.0" prefWidth="700.0" style="-fx-background-color: #7986cb;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CreateTaskController">
+   <children>
+      <JFXTextArea fx:id="taskDescriptionTextArea" layoutX="97.0" layoutY="118.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="107.0" prefWidth="504.0" promptText="Description" style="-fx-background-color: #e8eaf6;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="taskNameTextField" layoutX="97.0" layoutY="58.0" prefHeight="49.0" prefWidth="504.0" promptText="Task name" style="-fx-background-color: #e8eaf6;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="-1.0" prefHeight="42.0" prefWidth="700.0" style="-fx-background-color: #aab6fe;" text="Add New Task">
+         <font>
+            <Font name="Bodoni MT" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="saveTaskButton" buttonType="RAISED" layoutX="259.0" layoutY="241.0" prefHeight="49.0" prefWidth="194.0" style="-fx-background-color: #d4e157;" text="Save Task" textFill="#686767">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="showRecentTasksButton" buttonType="RAISED" layoutX="579.0" layoutY="266.0" prefHeight="33.0" prefWidth="107.0" style="-fx-background-color: #a0af22;" text="Recent tasks" />
+      <Label fx:id="taskAddedInfoLabel" alignment="CENTER" layoutX="95.0" layoutY="121.0" prefHeight="72.0" prefWidth="516.0" text="Task added successfully! Add new one..." visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

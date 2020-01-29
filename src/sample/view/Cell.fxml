@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cellAnchorPane" prefHeight="80.0" prefWidth="330.0" style="-fx-background-color: #7986cb;" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="taskIconImgView" fitHeight="40.0" fitWidth="32.0" layoutX="7.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/task_icon.png" />
+         </image></ImageView>
+      <Label fx:id="taskNameLabel" layoutX="30.0" layoutY="1.0" prefHeight="24.0" prefWidth="172.0" text="Task Name" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="taskDescriptionLabel" layoutX="39.0" layoutY="28.0" prefHeight="32.0" prefWidth="286.0" style="-fx-background-color: #aab6fe;" text="Description" />
+      <Label fx:id="taskDateLabel" layoutX="196.0" layoutY="63.0" prefHeight="16.0" prefWidth="134.0" textFill="#81ff87">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="deleteCellButton" fitHeight="24.0" fitWidth="21.0" layoutX="306.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/bin_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="listUpdateButton" fitHeight="20.0" fitWidth="20.0" layoutX="278.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/update_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

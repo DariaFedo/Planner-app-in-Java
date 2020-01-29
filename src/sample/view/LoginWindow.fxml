@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="700.0"
+            style="-fx-background-color: #a0af22;" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.controller.LoginWindowController">
+   <AnchorPane layoutY="86.0" prefHeight="314.0" prefWidth="700.0" style="-fx-background-color: #e8eaf6;">
+      <children>
+         <JFXTextField fx:id="usernameTextField" focusColor="#7986cb" layoutX="210.0" layoutY="54.0" prefHeight="25.0"
+                       prefWidth="280.0" promptText="Username"/>
+         <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="210.0" layoutY="173.0" prefHeight="33.0"
+                    prefWidth="273.0" style="-fx-background-color: #a0af22;" text="Login">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="registerButton" layoutX="210.0" layoutY="224.0" prefHeight="33.0" prefWidth="273.0"
+                    style="-fx-background-color: #cfcfcf;" text="Register"/>
+         <JFXPasswordField fx:id="passwordTextField" focusColor="#7986cb" layoutX="210.0" layoutY="122.0"
+                           prefHeight="25.0" prefWidth="280.0" promptText="Password"/>
+      </children>
+   </AnchorPane>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="206.0" layoutY="14.0" prefHeight="63.0" prefWidth="289.0"
+          text="Planner">
+      <font>
+         <Font name="Bodoni MT" size="42.0"/>
+      </font>
+   </Label>
+</AnchorPane>

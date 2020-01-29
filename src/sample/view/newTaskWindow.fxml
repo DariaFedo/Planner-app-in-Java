@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #a0af22;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.TaskController">
+   <children>
+      <AnchorPane fx:id="tasksAnchorPane" layoutY="87.0" prefHeight="313.0" prefWidth="704.0" style="-fx-background-color: #e8eaf6;">
+         <children>
+            <Label fx:id="noTaskLabel" alignment="CENTER" layoutX="102.0" layoutY="44.0" prefHeight="122.0" prefWidth="502.0" text="Welcome to your planner! Now you can create new tasks!">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="addNewTaskButton" buttonType="RAISED" layoutX="283.0" layoutY="184.0" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: #7986cb;" text="Add new task!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="283.0" layoutY="14.0" text="Planner">
+         <font>
+            <Font name="Bodoni MT" size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
